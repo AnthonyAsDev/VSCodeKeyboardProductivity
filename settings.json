@@ -1,0 +1,7 @@
+{
+  "vim.leader": "<space>",
+  "vim.insertModeKeyBindingsNonRecursive": [],
+  "vim.normalModeKeyBindingsNonRecursive": [],
+  "vim.visualModeKeyBindingsNonRecursive": [],
+  "whichkey.bindingOverrides": []
+}
