@@ -1,7 +1,110 @@
 {
   "vim.leader": "<space>",
-  "vim.insertModeKeyBindingsNonRecursive": [],
-  "vim.normalModeKeyBindingsNonRecursive": [],
-  "vim.visualModeKeyBindingsNonRecursive": [],
+  "vim.insertModeKeyBindingsNonRecursive": [
+    {
+      "before": ["j", "k"],
+      "after": ["<esc>"]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    // Which Key
+    {
+      "before": [":"],
+      "commands": ["whichkey.show"]
+    },
+    // VSCode
+    {
+      "name": "Close Editor",
+      "before": ["<leader>", "q"],
+      "commands": ["workbench.action.closeActiveEditor"]
+    },
+    {
+      "name": "Rename Symbol",
+      "before": ["<leader>", "r"],
+      "commands": ["editor.action.rename"]
+    },
+    {
+      "name": "Go to Matching Pair",
+      "before": ["<leader>", "t"],
+      "commands": ["editor.emmet.action.matchTag"]
+    },
+    {
+      "name": "Focus Breadcrumbs",
+      "before": ["<leader>", "y"],
+      "commands": ["breadcrumbs.focusAndSelect"]
+    },
+    {
+      "name": "Transform to Tittle Case",
+      "before": ["<leader>", "u"],
+      "commands": ["editor.action.transformToTitlecase"]
+    },
+    {
+      "name": "Focus on Files Explorer",
+      "before": ["<leader>", "i"],
+      "commands": ["workbench.files.action.focusFilesExplorer"]
+    },
+    {
+      "name": "Go to File",
+      "before": ["<leader>", "o"],
+      "commands": ["workbench.action.quickOpen"]
+    },
+    {
+      "name": "Show All Commands",
+      "before": ["<leader>", "p"],
+      "commands": ["workbench.action.showCommands"]
+    },
+    {
+      "name": "Source Action",
+      "before": ["<leader>", "a"],
+      "commands": ["editor.action.sourceAction"]
+    },
+    {
+      "name": "Save",
+      "before": ["<leader>", "s"],
+      "commands": ["workbench.action.files.save"]
+    },
+    {
+      "name": "Toggle Side Bar Visibility",
+      "before": ["<leader>", "d"],
+      "commands": ["workbench.action.toggleSidebarVisibility"]
+    },
+    {
+      "name": "Format Document",
+      "before": ["<leader>", "f"],
+      "commands": ["editor.action.formatDocument"]
+    },
+    {
+      "name": "Trigger Suggest",
+      "before": ["<leader>", "g"],
+      "commands": ["editor.action.triggerSuggest"]
+    },
+    {
+      "name": "Navigate to the View on the Left",
+      "before": ["<leader>", "h"],
+      "commands": ["workbench.action.navigateLeft"]
+    },
+    {
+      "name": "Navigate to the View Below",
+      "before": ["<leader>", "j"],
+      "commands": ["workbench.action.navigateDown"]
+    },
+    {
+      "name": "Navigate to the View Above",
+      "before": ["<leader>", "k"],
+      "commands": ["workbench.action.navigateUp"]
+    },
+    {
+      "name": "Navigate to the View on the Right",
+      "before": ["<leader>", "l"],
+      "commands": ["workbench.action.navigateRight"]
+    }
+  ],
+  "vim.visualModeKeyBindingsNonRecursive": [
+    // Which Key
+    {
+      "before": [":"],
+      "commands": ["whichkey.show"]
+    }
+  ],
   "whichkey.bindingOverrides": []
 }
