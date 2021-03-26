@@ -2,29 +2,35 @@
 
 Productivity boost with the keyboard in Visual Studio Code
 
-## Extensions
+## 🔥 Extensions
 
-### Vim
+### **Vim**
 
 Vim emulation for Visual Studio Code
-<br />
-https://marketplace.visualstudio.com/items?itemName=vscodevim.vim
 
-### Which Key
+> _Download Link_  
+> https://marketplace.visualstudio.com/items?itemName=vscodevim.vim
+
+### **Which Key**
 
 Whichkey like menu for Visual Studio Code
-<br />
-https://marketplace.visualstudio.com/items?itemName=VSpaceCode.whichkey
 
-### Simple New File
+> _Download Link_  
+> https://marketplace.visualstudio.com/items?itemName=VSpaceCode.whichkey
+
+### **Simple New File**
 
 Create new files from the command palette.
-<br />
-https://marketplace.visualstudio.com/items?itemName=fayras.simple-new-file
 
-## Settigns
+> _Download Link_  
+> https://marketplace.visualstudio.com/items?itemName=fayras.simple-new-file
 
-### Vim
+## ⚙️ Settings
+
+### **Vim**
+
+<details>
+  <summary>Settings</summary>
 
 ```json
 {
@@ -161,7 +167,13 @@ https://marketplace.visualstudio.com/items?itemName=fayras.simple-new-file
 }
 ```
 
-### Which Key
+</details>
+<br />
+  
+### **Which Key**
+
+<details>
+  <summary>Settings</summary>
 
 ```json
 {
@@ -2377,3 +2389,7 @@ https://marketplace.visualstudio.com/items?itemName=fayras.simple-new-file
   ]
 }
 ```
+
+</details>
+
+<br />
