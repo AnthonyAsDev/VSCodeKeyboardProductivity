@@ -16,6 +16,12 @@ Whichkey like menu for Visual Studio Code
 <br />
 https://marketplace.visualstudio.com/items?itemName=VSpaceCode.whichkey
 
+### Simple New File
+
+Create new files from the command palette.
+<br />
+https://marketplace.visualstudio.com/items?itemName=fayras.simple-new-file
+
 ## Settigns
 
 ### Vim
@@ -129,6 +135,11 @@ https://marketplace.visualstudio.com/items?itemName=VSpaceCode.whichkey
       "name": "Navigate to the View on the Right",
       "before": ["<leader>", "l"],
       "commands": ["workbench.action.navigateRight"]
+    },
+    {
+      "name": "Simple New File",
+      "before": ["<leader>", "n"],
+      "commands": ["extension.simpleNewFile"]
     }
   ],
   "vim.visualModeKeyBindingsNonRecursive": [

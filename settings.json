@@ -97,6 +97,11 @@
       "name": "Navigate to the View on the Right",
       "before": ["<leader>", "l"],
       "commands": ["workbench.action.navigateRight"]
+    },
+    {
+      "name": "Simple New File",
+      "before": ["<leader>", "n"],
+      "commands": ["extension.simpleNewFile"]
     }
   ],
   "vim.visualModeKeyBindingsNonRecursive": [
