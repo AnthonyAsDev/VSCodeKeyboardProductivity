@@ -388,12 +388,6 @@ Create new files from the command palette.
           "command": "workbench.action.unpinEditor"
         },
         {
-          "key": "Y",
-          "name": "Copy buffer to clipboard",
-          "type": "command",
-          "command": "vspacecode.copyWholeBuffer"
-        },
-        {
           "key": "N",
           "name": "+New Buffer",
           "type": "bindings",
@@ -831,7 +825,7 @@ Create new files from the command palette.
         },
         {
           "key": "e",
-          "name": "+Emacs/VSpaceCode",
+          "name": "+Emacs",
           "type": "bindings",
           "bindings": [
             {
@@ -1179,6 +1173,189 @@ Create new files from the command palette.
               "command": "git.removeRemote"
             }
           ]
+        }
+      ]
+    },
+    // Emmet
+    {
+      "key": "m",
+      "name": "+Emmet",
+      "type": "bindings",
+      "bindings": [
+        {
+          "key": "b",
+          "name": "+Balance",
+          "type": "bindings",
+          "bindings": [
+            {
+              "key": "i",
+              "name": "Balance (inward)",
+              "type": "command",
+              "command": "editor.emmet.action.balanceIn"
+            },
+            {
+              "key": "o",
+              "name": "Balance (outward)",
+              "type": "command",
+              "command": "editor.emmet.action.balanceOut"
+            }
+          ]
+        },
+        {
+          "key": "d",
+          "name": "+Decrement",
+          "type": "bindings",
+          "bindings": [
+            {
+              "key": "j",
+              "name": "Decrement by 1",
+              "type": "command",
+              "command": "editor.emmet.action.decrementNumberByOne"
+            },
+            {
+              "key": "k",
+              "name": "Decrement by 0.1",
+              "type": "command",
+              "command": "editor.emmet.action.decrementNumberByOneTenth"
+            },
+            {
+              "key": "l",
+              "name": "Decrement by 10",
+              "type": "command",
+              "command": "editor.emmet.action.decrementNumberByTen"
+            }
+          ]
+        },
+        {
+          "key": "i",
+          "name": "+Increment",
+          "type": "bindings",
+          "bindings": [
+            {
+              "key": "j",
+              "name": "Increment by 1",
+              "type": "command",
+              "command": "editor.emmet.action.incrementNumberByOne"
+            },
+            {
+              "key": "k",
+              "name": "Increment by 0.1",
+              "type": "command",
+              "command": "editor.emmet.action.incrementNumberByOneTenth"
+            },
+            {
+              "key": "l",
+              "name": "Increment by 10",
+              "type": "command",
+              "command": "editor.emmet.action.incrementNumberByTen"
+            }
+          ]
+        },
+        {
+          "key": "t",
+          "name": "+Tag",
+          "type": "bindings",
+          "bindings": [
+            {
+              "key": "m",
+              "name": "Go to Matching Pair",
+              "type": "command",
+              "command": "editor.emmet.action.matchTag"
+            },
+            {
+              "key": "r",
+              "name": "Remove Tag",
+              "type": "command",
+              "command": "editor.emmet.action.removeTag"
+            },
+            {
+              "key": "t",
+              "name": "Split/Join Tag",
+              "type": "command",
+              "command": "editor.emmet.action.splitJoinTag"
+            },
+            {
+              "key": "u",
+              "name": "Update Tag",
+              "type": "command",
+              "command": "editor.emmet.action.updateTag"
+            }
+          ]
+        },
+        {
+          "key": "g",
+          "name": "+Go to Edit Point",
+          "type": "bindings",
+          "bindings": [
+            {
+              "key": "j",
+              "name": "Go to Next Edit Point",
+              "type": "command",
+              "command": "editor.emmet.action.nextEditPoint"
+            },
+            {
+              "key": "k",
+              "name": "Go to Previous Edit Point",
+              "type": "command",
+              "command": "editor.emmet.action.prevEditPoint"
+            }
+          ]
+        },
+
+        {
+          "key": "s",
+          "name": "+Select Item",
+          "type": "bindings",
+          "bindings": [
+            {
+              "key": "j",
+              "name": "Select Next Item",
+              "type": "command",
+              "command": "editor.emmet.action.selectNextItem"
+            },
+            {
+              "key": "k",
+              "name": "Select Previous Item",
+              "type": "command",
+              "command": "editor.emmet.action.selectPrevItem"
+            }
+          ]
+        },
+        {
+          "key": "e",
+          "name": "Evaluate Math Expression",
+          "type": "command",
+          "command": "editor.emmet.action.evaluateMathExpression"
+        },
+        {
+          "key": "m",
+          "name": "Merge Lines",
+          "type": "command",
+          "command": "editor.emmet.action.mergeLines"
+        },
+        {
+          "key": "r",
+          "name": "Reflect CSS Value",
+          "type": "command",
+          "command": "editor.emmet.action.reflectCSSValue"
+        },
+        {
+          "key": "c",
+          "name": "Toggle Comment",
+          "type": "command",
+          "command": "editor.emmet.action.toggleComment"
+        },
+        {
+          "key": "u",
+          "name": "Update Image Size",
+          "type": "command",
+          "command": "editor.emmet.action.updateImageSize"
+        },
+        {
+          "key": "w",
+          "name": "Wrap with Abbreviation",
+          "type": "command",
+          "command": "editor.emmet.action.wrapWithAbbreviation"
         }
       ]
     },
