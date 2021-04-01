@@ -34,7 +34,6 @@ Create new files from the command palette.
 
 ```json
 {
-  "vim.leader": "<space>",
   "vim.insertModeKeyBindingsNonRecursive": [
     {
       "before": ["j", "k"],
@@ -42,6 +41,11 @@ Create new files from the command palette.
     }
   ],
   "vim.normalModeKeyBindingsNonRecursive": [
+    // Which Key
+    {
+      "before": [":"],
+      "commands": ["whichkey.show"]
+    },
     // Vim
     {
       "before": ["J"],
@@ -50,11 +54,6 @@ Create new files from the command palette.
     {
       "before": ["K"],
       "after": ["5", "k"]
-    },
-    // Which Key
-    {
-      "before": [":"],
-      "commands": ["whichkey.show"]
     },
     // VSCode
     {
@@ -118,11 +117,6 @@ Create new files from the command palette.
       "commands": ["editor.action.formatDocument"]
     },
     {
-      "name": "Trigger Suggest",
-      "before": ["<leader>", "g"],
-      "commands": ["editor.action.triggerSuggest"]
-    },
-    {
       "name": "Navigate to the View on the Left",
       "before": ["<leader>", "h"],
       "commands": ["workbench.action.navigateLeft"]
@@ -146,9 +140,80 @@ Create new files from the command palette.
       "name": "Simple New File",
       "before": ["<leader>", "n"],
       "commands": ["extension.simpleNewFile"]
+    },
+    // Git
+    {
+      "name": "Git: Init",
+      "before": ["<leader>", "g", "i"],
+      "commands": ["git.init"]
+    },
+    {
+      "name": "Git: Pull",
+      "before": ["<leader>", "g", "p"],
+      "commands": ["git.pull"]
+    },
+    {
+      "name": "Git: Push",
+      "before": ["<leader>", "g", "P"],
+      "commands": ["git.push"]
+    },
+    {
+      "name": "Git: Checkout to",
+      "before": ["<leader>", "g", "o"],
+      "commands": ["git.checkout"]
+    },
+    {
+      "name": "Git: Commit",
+      "before": ["<leader>", "g", "c"],
+      "commands": ["git.commit"]
+    },
+    {
+      "name": "Git: Undo Last Commit",
+      "before": ["<leader>", "g", "u"],
+      "commands": ["git.undoCommit"]
+    },
+    {
+      "name": "Git: Stage Chages",
+      "before": ["<leader>", "g", "s"],
+      "commands": ["git.stage"]
+    },
+    {
+      "name": "Git: Unstage Chages",
+      "before": ["<leader>", "g", "S"],
+      "commands": ["git.unstage"]
+    },
+    {
+      "name": "Git: Discard Changes",
+      "before": ["<leader>", "g", "d"],
+      "commands": ["git.clean"]
+    },
+    {
+      "name": "Git: Create Branch",
+      "before": ["<leader>", "g", "b"],
+      "commands": ["git.branch"]
+    },
+    {
+      "name": "Git: Create Merge",
+      "before": ["<leader>", "g", "m"],
+      "commands": ["git.merge"]
+    },
+    {
+      "name": "Move to Next Change",
+      "before": ["<leader>", "g", "j"],
+      "commands": ["workbench.action.editor.nextChange"]
+    },
+    {
+      "name": "Move to Previous Change",
+      "before": ["<leader>", "g", "k"],
+      "commands": ["workbench.action.editor.previousChange"]
     }
   ],
   "vim.visualModeKeyBindingsNonRecursive": [
+    // Which Key
+    {
+      "before": [":"],
+      "commands": ["whichkey.show"]
+    },
     // Vim
     {
       "before": ["J"],
@@ -158,12 +223,29 @@ Create new files from the command palette.
       "before": ["K"],
       "after": ["5", "k"]
     },
-    // Which Key
+    // VSCode
     {
-      "before": [":"],
-      "commands": ["whichkey.show"]
+      "name": "Format Selection",
+      "before": ["<leader>", "g", "s"],
+      "commands": ["editor.action.formatSelection"]
+    },
+    // Git
+    {
+      "name": "Git: Stage Selected Ranges",
+      "before": ["<leader>", "g", "s"],
+      "commands": ["git.stageSelectedRanges"]
+    },
+    {
+      "name": "Git: Unstage Selected Ranges",
+      "before": ["<leader>", "g", "u"],
+      "commands": ["git.unstageSelectedRanges"]
+    },
+    {
+      "name": "Git: Revert Selected Ranges",
+      "before": ["<leader>", "g", "r"],
+      "commands": ["git.revertSelectedRanges"]
     }
-  ]
+  ],
 }
 ```
 
