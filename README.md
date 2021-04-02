@@ -107,11 +107,6 @@ Create new files from the command palette.
       "commands": ["workbench.action.files.save"]
     },
     {
-      "name": "Toggle Side Bar Visibility",
-      "before": ["<leader>", "d"],
-      "commands": ["workbench.action.toggleSidebarVisibility"]
-    },
-    {
       "name": "Format Document",
       "before": ["<leader>", "f"],
       "commands": ["editor.action.formatDocument"]
@@ -206,6 +201,62 @@ Create new files from the command palette.
       "name": "Move to Previous Change",
       "before": ["<leader>", "g", "k"],
       "commands": ["workbench.action.editor.previousChange"]
+    },
+    // Debug
+    {
+      "name": "Debug: Start Debugging",
+      "before": ["<leader>", "d", "s"],
+      "commands": ["workbench.action.debug.start"]
+    },
+    {
+      "name": "Debug: Continue",
+      "before": ["<leader>", "d", "n"],
+      "commands": ["workbench.action.debug.continue"]
+    },
+    {
+      "name": "Debug: Pause",
+      "before": ["<leader>", "d", "p"],
+      "commands": ["workbench.action.debug.pause"]
+    },
+    {
+      "name": "Debug: Step Over",
+      "before": ["<leader>", "d", "j"],
+      "commands": ["workbench.action.debug.stepOver"]
+    },
+    {
+      "name": "Debug: Step Into",
+      "before": ["<leader>", "d", "k"],
+      "commands": ["workbench.action.debug.stepInto"]
+    },
+    {
+      "name": "Debug: Step Out",
+      "before": ["<leader>", "d", "l"],
+      "commands": ["workbench.action.debug.stepOut"]
+    },
+    {
+      "name": "Debug: Restart",
+      "before": ["<leader>", "d", "r"],
+      "commands": ["workbench.action.debug.restart"]
+    },
+    {
+      "name": "Debug: Stop",
+      "before": ["<leader>", "d", "x"],
+      "commands": ["workbench.action.debug.stop"]
+    },
+    {
+      "name": "Debug: Show Hover",
+      "before": ["<leader>", "d", "h"],
+      "commands": ["editor.debug.action.showDebugHover"]
+    },
+    {
+      "name": "Debug: Toggle Breakpoint",
+      "before": ["<leader>", "d", "u"],
+      "commands": ["editor.debug.action.toggleBreakpoint"]
+    },
+    {
+      "name": "Debug: Inline Breakpoint",
+      "before": ["<leader>", "d", "i"],
+      "commands": ["editor.debug.action.toggleInlineBreakpoint"]
     }
   ],
   "vim.visualModeKeyBindingsNonRecursive": [
@@ -245,7 +296,7 @@ Create new files from the command palette.
       "before": ["<leader>", "g", "r"],
       "commands": ["git.revertSelectedRanges"]
     }
-  ],
+  ]
 }
 ```
 
