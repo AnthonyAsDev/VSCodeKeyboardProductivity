@@ -25,11 +25,37 @@ Create new files from the command palette.
 > _Download Link_  
 > https://marketplace.visualstudio.com/items?itemName=fayras.simple-new-file
 
-## ⚙️ Settings
+## 📜 Documentation
 
-### **Vim**
+### VSCode
 
-#### Git
+| Status | Command      | Description                       |
+| ------ | ------------ | --------------------------------- |
+| ✅     | `<leader>` q | Close Editor                      |
+| ⭐     | `<leader>` w | Unassigned key                    |
+| ⭐     | `<leader>` e | Unassigned key                    |
+| ✅     | `<leader>` r | Rename Symbol                     |
+| ✅     | `<leader>` t | Go to Matching Pair               |
+| ✅     | `<leader>` y | Focus Breadcrumbs                 |
+| ✅     | `<leader>` u | Transform to Tittle Case          |
+| ✅     | `<leader>` i | Toggle Side Bar Visibility        |
+| ✅     | `<leader>` o | Go to File                        |
+| ✅     | `<leader>` p | Show All Commands                 |
+| ✅     | `<leader>` a | Source Action                     |
+| ✅     | `<leader>` s | Save                              |
+| 💎     | `<leader>` d | Super key                         |
+| ✅     | `<leader>` f | Format Document                   |
+| 💎     | `<leader>` g | Super key                         |
+| ✅     | `<leader>` h | Navigate to the View on the Left  |
+| ✅     | `<leader>` j | Navigate to the View Below        |
+| ✅     | `<leader>` k | Navigate to the View Above        |
+| ✅     | `<leader>` l | Navigate to the View on the Right |
+| ⭐     | `<leader>` b | Unassigned key                    |
+| 🔀     | `<leader>` n | Simple New File                   |
+
+<br />
+
+### Git
 
 | Status | Command        | Description                  |
 | ------ | -------------- | ---------------------------- |
@@ -51,7 +77,7 @@ Create new files from the command palette.
 
 <br />
 
-#### Debug
+### Debug
 
 | Status | Command        | Description              |
 | ------ | -------------- | ------------------------ |
@@ -69,6 +95,10 @@ Create new files from the command palette.
 | ✅     | `<leader>` d i | Debug: Inline Breakpoint |
 
 <br />
+
+## ⚙️ Settings
+
+### **Vim**
 
 <details>
   <summary>Settings</summary>
@@ -123,9 +153,9 @@ Create new files from the command palette.
       "commands": ["editor.action.transformToTitlecase"]
     },
     {
-      "name": "Focus on Files Explorer",
+      "name": "Toggle Side Bar Visibility",
       "before": ["<leader>", "i"],
-      "commands": ["workbench.files.action.focusFilesExplorer"]
+      "commands": ["workbench.action.toggleSidebarVisibility"]
     },
     {
       "name": "Go to File",
@@ -2757,5 +2787,4 @@ Create new files from the command palette.
 ```
 
 </details>
-
 <br />
