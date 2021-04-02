@@ -29,6 +29,44 @@ Create new files from the command palette.
 
 ### **Vim**
 
+#### Git
+
+| Status | Command        | Description                  |
+| ------ | -------------- | ---------------------------- |
+| ✅     | `<leader>` g i | Git: Init                    |
+| ✅     | `<leader>` g p | Git: Pull                    |
+| ✅     | `<leader>` g P | Git: Push                    |
+| ✅     | `<leader>` g o | Git: Checkout to             |
+| ✅     | `<leader>` g c | Git: Commit                  |
+| ✅     | `<leader>` g u | Git: Undo Last Commit        |
+| ✅     | `<leader>` g s | Git: Stage Changes           |
+| ✅     | `<leader>` g S | Git: Unstage Changes         |
+| ✅     | `<leader>` g d | Git: Discard Changes         |
+| ✅     | `<leader>` g b | Git: Create Branch           |
+| ✅     | `<leader>` g m | Git: Create Merge            |
+| ✅     | `<leader>` g j | Git: Move to Next Change     |
+| ✅     | `<leader>` g k | Git: Move to Previous Change |
+
+<br />
+
+#### Debug
+
+| Status | Command        | Description              |
+| ------ | -------------- | ------------------------ |
+| ✅     | `<leader>` d s | Debug: Start Debugging   |
+| ✅     | `<leader>` d n | Debug: Continue          |
+| ✅     | `<leader>` d p | Debug: Pause             |
+| ✅     | `<leader>` d j | Debug: Step Over         |
+| ✅     | `<leader>` d k | Debug: Step Into         |
+| ✅     | `<leader>` d l | Debug: Step Out          |
+| ✅     | `<leader>` d r | Debug: Restart           |
+| ✅     | `<leader>` d x | Debug: Stop              |
+| ✅     | `<leader>` d h | Debug: Show Hover        |
+| ✅     | `<leader>` d u | Debug: Toggle Breakpoint |
+| ✅     | `<leader>` d i | Debug: Inline Breakpoint |
+
+<br />
+
 <details>
   <summary>Settings</summary>
 
@@ -168,12 +206,12 @@ Create new files from the command palette.
       "commands": ["git.undoCommit"]
     },
     {
-      "name": "Git: Stage Chages",
+      "name": "Git: Stage Changes",
       "before": ["<leader>", "g", "s"],
       "commands": ["git.stage"]
     },
     {
-      "name": "Git: Unstage Chages",
+      "name": "Git: Unstage Changes",
       "before": ["<leader>", "g", "S"],
       "commands": ["git.unstage"]
     },
