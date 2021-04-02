@@ -56,6 +56,7 @@ Create new files from the command palette.
 | Status | Command        | Description              |
 | ------ | -------------- | ------------------------ |
 | ✅     | `<leader>` d s | Debug: Start Debugging   |
+| ✅     | `<leader>` d d | Show Run and Debug       |
 | ✅     | `<leader>` d n | Debug: Continue          |
 | ✅     | `<leader>` d p | Debug: Pause             |
 | ✅     | `<leader>` d j | Debug: Step Over         |
@@ -257,6 +258,11 @@ Create new files from the command palette.
       "name": "Debug: Start Debugging",
       "before": ["<leader>", "d", "s"],
       "commands": ["workbench.action.debug.start"]
+    },
+    {
+      "name": "Show Run and Debug",
+      "before": ["<leader>", "d", "d"],
+      "commands": ["workbench.view.debug"]
     },
     {
       "name": "Debug: Continue",

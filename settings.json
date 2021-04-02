@@ -185,6 +185,11 @@
       "commands": ["workbench.action.debug.start"]
     },
     {
+      "name": "Show Run and Debug",
+      "before": ["<leader>", "d", "d"],
+      "commands": ["workbench.view.debug"]
+    },
+    {
       "name": "Debug: Continue",
       "before": ["<leader>", "d", "n"],
       "commands": ["workbench.action.debug.continue"]
