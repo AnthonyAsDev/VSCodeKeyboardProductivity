@@ -34,6 +34,8 @@ Create new files from the command palette.
 | Status | Command        | Description                  |
 | ------ | -------------- | ---------------------------- |
 | ✅     | `<leader>` g i | Git: Init                    |
+| ✅     | `<leader>` g t | Focus on Timeline View       |
+| ✅     | `<leader>` g g | Focus on Source Control View |
 | ✅     | `<leader>` g p | Git: Pull                    |
 | ✅     | `<leader>` g P | Git: Push                    |
 | ✅     | `<leader>` g o | Git: Checkout to             |
@@ -179,6 +181,16 @@ Create new files from the command palette.
       "name": "Git: Init",
       "before": ["<leader>", "g", "i"],
       "commands": ["git.init"]
+    },
+    {
+      "name": "Focus on Timeline View",
+      "before": ["<leader>", "g", "t"],
+      "commands": ["timeline.focus"]
+    },
+    {
+      "name": "Focus on Source Control View",
+      "before": ["<leader>", "g", "g"],
+      "commands": ["workbench.scm.focus"]
     },
     {
       "name": "Git: Pull",

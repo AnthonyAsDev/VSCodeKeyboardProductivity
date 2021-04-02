@@ -109,6 +109,16 @@
       "commands": ["git.init"]
     },
     {
+      "name": "Focus on Timeline View",
+      "before": ["<leader>", "g", "t"],
+      "commands": ["timeline.focus"]
+    },
+    {
+      "name": "Focus on Source Control View",
+      "before": ["<leader>", "g", "g"],
+      "commands": ["workbench.scm.focus"]
+    },
+    {
       "name": "Git: Pull",
       "before": ["<leader>", "g", "p"],
       "commands": ["git.pull"]
