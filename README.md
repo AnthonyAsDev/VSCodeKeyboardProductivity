@@ -96,6 +96,56 @@ Create new files from the command palette.
 
 <br />
 
+## ⚡ Focused Vew
+
+### Explorer
+
+| Status | Command   | Description                        |
+| ------ | --------- | ---------------------------------- |
+| ✅     | e         | Explorer: Focus on Folders View    |
+| ✅     | a         | File: New File                     |
+| ✅     | `shift` a | File: New Folder                   |
+| ✅     | y         | File: Copy                         |
+| ✅     | x         | File: Cut                          |
+| ✅     | p         | File: Paste                        |
+| ✅     | r         | File: Rename                       |
+| ✅     | d         | File: Move to Trash                |
+| ✅     | `shift` d | File: Delete                       |
+| ✅     | c         | File: Collapse Folders in Explorer |
+| ✅     | s         | Open To Side                       |
+| ✅     | f         | Reveal in File Explorer            |
+| ✅     | t         | Open in Terminal                   |
+| ✅     | u         | Copy Path of Active File           |
+| ✅     | i         | Copy Relative Path of Active File  |
+
+<br />
+
+### Timeline
+
+| Status | Command | Description                |
+| ------ | ------- | -------------------------- |
+| ✅     | f       | View: Focus Next Part      |
+| ✅     | i       | Git: Copy Commit ID        |
+| ✅     | m       | Git: Copy Commit Message   |
+| ✅     | s       | Git: Select for Compare    |
+| ✅     | w       | Git: Compare with Selected |
+
+<br />
+
+### Terminal
+
+| Status | Command          | Description                       |
+| ------ | ---------------- | --------------------------------- |
+| ✅     | `ctrl` m         | View: Toggle Maximized Panel      |
+| ✅     | `ctrl` `shift` j | Terminal: Scroll Down (Line)      |
+| ✅     | `ctrl` `shift` k | Terminal: Scroll Up (Line)        |
+| ✅     | `ctrl` `shift` h | Terminal: Scroll Down (Page)      |
+| ✅     | `ctrl` `shift` l | Terminal: Scroll Up (Page)        |
+| ✅     | `ctrl` n         | Terminal: Focus Next Terminal     |
+| ✅     | `ctrl` `shift` n | Terminal: Focus Previous Terminal |
+
+<br />
+
 ## ⚙️ Settings
 
 ### **Vim**
@@ -2784,6 +2834,191 @@ Create new files from the command palette.
     }
   ]
 }
+```
+
+</details>
+<br />
+
+### **Keyboard Shortcuts**
+
+<details>
+  <summary>Settings</summary>
+
+```json
+[
+  // Explorer
+  {
+    "key": "e",
+    "name": "Explorer: Focus on Folders View",
+    "command": "workbench.explorer.fileView.focus",
+    "when": "!editorFocus && !inputFocus"
+  },
+  {
+    "key": "a",
+    "name": "File: New File",
+    "command": "explorer.newFile",
+    "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !inputFocus"
+  },
+  {
+    "key": "shift+a",
+    "name": "File: New Folder",
+    "command": "explorer.newFolder",
+    "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !inputFocus"
+  },
+  {
+    "key": "y",
+    "name": "File: Copy",
+    "command": "filesExplorer.copy",
+    "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !inputFocus"
+  },
+  {
+    "key": "x",
+    "name": "File: Cut",
+    "command": "filesExplorer.cut",
+    "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !inputFocus"
+  },
+  {
+    "key": "p",
+    "name": "File: Paste",
+    "command": "filesExplorer.paste",
+    "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceReadonly && !inputFocus"
+  },
+  {
+    "key": "r",
+    "name": "File: Rename",
+    "command": "renameFile",
+    "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+  },
+  {
+    "key": "d",
+    "name": "File: Move to Trash",
+    "command": "moveFileToTrash",
+    "when": "explorerResourceMoveableToTrash && explorerViewletVisible && filesExplorerFocus && !explorerResourceReadonly && !inputFocus"
+  },
+  {
+    "key": "shift+d",
+    "name": "File: Delete",
+    "command": "deleteFile",
+    "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceReadonly && !inputFocus"
+  },
+  {
+    "key": "c",
+    "name": "Collapse Folders in Explorer",
+    "command": "workbench.files.action.collapseExplorerFolders",
+    "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceReadonly && !inputFocus"
+  },
+  {
+    "key": "s",
+    "name": "Open To Side",
+    "command": "explorer.openToSide",
+    "when": "explorerViewletFocus && explorerViewletVisible && !inputFocus"
+  },
+  {
+    "key": "f",
+    "name": "Reveal in File Explorer",
+    "command": "revealFileInOS",
+    "when": "explorerViewletFocus && explorerViewletVisible && !inputFocus"
+  },
+  {
+    "key": "t",
+    "name": "Open in Terminal",
+    "command": "openInTerminal",
+    "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !inputFocus"
+  },
+  {
+    "key": "u",
+    "name": "Copy Path of Active File",
+    "command": "copyFilePath",
+    "when": "explorerViewletFocus && explorerViewletVisible && !inputFocus"
+  },
+  {
+    "key": "i",
+    "name": "Copy Relative Path of Active File",
+    "command": "copyRelativeFilePath",
+    "when": "explorerViewletFocus && explorerViewletVisible && !inputFocus"
+  },
+  // Git
+  {
+    "key": "g",
+    "name": "Focus on Source Control",
+    "command": "workbench.scm.focus",
+    "when": "!editorFocus && !inputFocus"
+  },
+  // Timeline
+  {
+    "key": "f",
+    "name": "View: Focus Next Part",
+    "command": "workbench.action.focusNextPart",
+    "when": "timelineFollowActiveEditor && !inputFocus"
+  },
+  {
+    "key": "i",
+    "name": "Git: Copy Commit ID",
+    "command": "git.timeline.copyCommitId",
+    "when": "timelineFollowActiveEditor && !inputFocus"
+  },
+  {
+    "key": "m",
+    "name": "Git: Copy Commit Message",
+    "command": "git.timeline.copyCommitMessage",
+    "when": "timelineFollowActiveEditor && !inputFocus"
+  },
+  {
+    "key": "s",
+    "name": "Select for Compare",
+    "command": "git.timeline.selectForCompare",
+    "when": "timelineFollowActiveEditor && !inputFocus"
+  },
+  {
+    "key": "w",
+    "name": "Compare with Selected",
+    "command": "git.timeline.compareWithSelected",
+    "when": "timelineFollowActiveEditor && !inputFocus"
+  },
+  // Terminal
+  {
+    "key": "ctrl+m",
+    "name": "View: Toggle Maximized Panel",
+    "command": "workbench.action.toggleMaximizedPanel",
+    "when": "terminalFocus && terminalProcessSupported"
+  },
+  {
+    "key": "ctrl+shift+j",
+    "name": "Terminal: Scroll Down (Line)",
+    "command": "workbench.action.terminal.scrollDown",
+    "when": "terminalFocus && terminalProcessSupported"
+  },
+  {
+    "key": "ctrl+shift+k",
+    "name": "Terminal: Scroll Up (Line)",
+    "command": "workbench.action.terminal.scrollUp",
+    "when": "terminalFocus && terminalProcessSupported"
+  },
+  {
+    "key": "ctrl+shift+h",
+    "name": "Terminal: Scroll Down (Page)",
+    "command": "workbench.action.terminal.scrollDownPage",
+    "when": "terminalFocus && terminalProcessSupported"
+  },
+  {
+    "key": "ctrl+shift+l",
+    "name": "Terminal: Scroll Up (Page)",
+    "command": "workbench.action.terminal.scrollUpPage",
+    "when": "terminalFocus && terminalProcessSupported"
+  },
+  {
+    "key": "ctrl+n",
+    "name": "Terminal: Focus Next Terminal",
+    "command": "workbench.action.terminal.focusNext",
+    "when": "terminalFocus && terminalProcessSupported"
+  },
+  {
+    "key": "ctrl+shift+n",
+    "name": "Terminal: Focus Previous Terminal",
+    "command": "workbench.action.terminal.focusPrevious",
+    "when": "terminalFocus && terminalProcessSupported"
+  }
+]
 ```
 
 </details>
