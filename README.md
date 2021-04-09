@@ -71,9 +71,22 @@ Create new files from the command palette.
 | ✅     | `<leader>` g S | Git: Unstage Changes         |
 | ✅     | `<leader>` g d | Git: Discard Changes         |
 | ✅     | `<leader>` g b | Git: Create Branch           |
-| ✅     | `<leader>` g m | Git: Create Merge            |
+| ✅     | `<leader>` g M | Git: Merge Branch            |
 | ✅     | `<leader>` g j | Git: Move to Next Change     |
 | ✅     | `<leader>` g k | Git: Move to Previous Change |
+
+<br />
+
+### Merge Conflict
+
+| Status | Command          | Description                              |
+| ------ | ---------------- | ---------------------------------------- |
+| ✅     | `<leader>` g m c | Merge Conflict: Accept Current           |
+| ✅     | `<leader>` g m i | Merge Conflict: Accept Incoming          |
+| ✅     | `<leader>` g m b | Merge Conflict: Accept Both              |
+| ✅     | `<leader>` g m d | Merge Conflict: Compare Current Conflict |
+| ✅     | `<leader>` g m n | Merge Conflict: Next Conflict            |
+| ✅     | `<leader>` g m N | Merge Conflict: Previous Conflict        |
 
 <br />
 
@@ -319,8 +332,8 @@ Create new files from the command palette.
       "commands": ["git.branch"]
     },
     {
-      "name": "Git: Create Merge",
-      "before": ["<leader>", "g", "m"],
+      "name": "Git: Merge Branch",
+      "before": ["<leader>", "g", "M"],
       "commands": ["git.merge"]
     },
     {
@@ -332,6 +345,36 @@ Create new files from the command palette.
       "name": "Move to Previous Change",
       "before": ["<leader>", "g", "k"],
       "commands": ["workbench.action.editor.previousChange"]
+    },
+    {
+      "name": "Merge Conflict: Accept Current",
+      "before": ["<leader>", "g", "m", "c"],
+      "commands": ["merge-conflict.accept.current"]
+    },
+    {
+      "name": "Merge Conflict: Accept Incoming",
+      "before": ["<leader>", "g", "m", "i"],
+      "commands": ["merge-conflict.accept.incoming"]
+    },
+    {
+      "name": "Merge Conflict: Accept Both",
+      "before": ["<leader>", "g", "m", "b"],
+      "commands": ["merge-conflict.accept.both"]
+    },
+    {
+      "name": "Merge Conflict: Compare Current Conflict",
+      "before": ["<leader>", "g", "m", "d"],
+      "commands": ["merge-conflict.compare"]
+    },
+    {
+      "name": "Merge Conflict: Next Conflict",
+      "before": ["<leader>", "g", "m", "n"],
+      "commands": ["merge-conflict.next"]
+    },
+    {
+      "name": "Merge Conflict: Previous Conflict",
+      "before": ["<leader>", "g", "m", "N"],
+      "commands": ["merge-conflict.previous"]
     },
     // Debug
     {

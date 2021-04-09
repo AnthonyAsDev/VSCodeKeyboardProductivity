@@ -164,8 +164,8 @@
       "commands": ["git.branch"]
     },
     {
-      "name": "Git: Create Merge",
-      "before": ["<leader>", "g", "m"],
+      "name": "Git: Merge Branch",
+      "before": ["<leader>", "g", "M"],
       "commands": ["git.merge"]
     },
     {
@@ -177,6 +177,36 @@
       "name": "Move to Previous Change",
       "before": ["<leader>", "g", "k"],
       "commands": ["workbench.action.editor.previousChange"]
+    },
+    {
+      "name": "Merge Conflict: Accept Current",
+      "before": ["<leader>", "g", "m", "c"],
+      "commands": ["merge-conflict.accept.current"]
+    },
+    {
+      "name": "Merge Conflict: Accept Incoming",
+      "before": ["<leader>", "g", "m", "i"],
+      "commands": ["merge-conflict.accept.incoming"]
+    },
+    {
+      "name": "Merge Conflict: Accept Both",
+      "before": ["<leader>", "g", "m", "b"],
+      "commands": ["merge-conflict.accept.both"]
+    },
+    {
+      "name": "Merge Conflict: Compare Current Conflict",
+      "before": ["<leader>", "g", "m", "d"],
+      "commands": ["merge-conflict.compare"]
+    },
+    {
+      "name": "Merge Conflict: Next Conflict",
+      "before": ["<leader>", "g", "m", "n"],
+      "commands": ["merge-conflict.next"]
+    },
+    {
+      "name": "Merge Conflict: Previous Conflict",
+      "before": ["<leader>", "g", "m", "N"],
+      "commands": ["merge-conflict.previous"]
     },
     // Debug
     {
