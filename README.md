@@ -27,13 +27,27 @@ Create new files from the command palette.
 
 ## 📜 Documentation
 
+### Key
+
+✅ - Command done
+
+⭐ - Unassigned key
+
+💎 - Super key
+
+🔀 - Extension
+
+😭 - Unexpected error
+
+<br />
+
 ### VSCode
 
 | Status | Command      | Description                       |
 | ------ | ------------ | --------------------------------- |
 | ✅     | `<leader>` q | Close Editor                      |
-| ⭐     | `<leader>` w | Unassigned key                    |
-| ⭐     | `<leader>` e | Unassigned key                    |
+| ⭐     | `<leader>` w | ...                               |
+| ⭐     | `<leader>` e | ...                               |
 | ✅     | `<leader>` r | Rename Symbol                     |
 | ✅     | `<leader>` t | Go to Matching Pair               |
 | ✅     | `<leader>` y | Focus Breadcrumbs                 |
@@ -43,14 +57,14 @@ Create new files from the command palette.
 | ✅     | `<leader>` p | Show All Commands                 |
 | ✅     | `<leader>` a | Source Action                     |
 | ✅     | `<leader>` s | Save                              |
-| 💎     | `<leader>` d | Super key                         |
+| 💎     | `<leader>` d | ...                               |
 | ✅     | `<leader>` f | Format Document                   |
-| 💎     | `<leader>` g | Super key                         |
+| 💎     | `<leader>` g | ...                               |
 | ✅     | `<leader>` h | Navigate to the View on the Left  |
 | ✅     | `<leader>` j | Navigate to the View Below        |
 | ✅     | `<leader>` k | Navigate to the View Above        |
 | ✅     | `<leader>` l | Navigate to the View on the Right |
-| ⭐     | `<leader>` b | Unassigned key                    |
+| ⭐     | `<leader>` b | ...                               |
 | 🔀     | `<leader>` n | Simple New File                   |
 
 <br />
@@ -92,20 +106,21 @@ Create new files from the command palette.
 
 ### Debug
 
-| Status | Command        | Description              |
-| ------ | -------------- | ------------------------ |
-| ✅     | `<leader>` d s | Debug: Start Debugging   |
-| ✅     | `<leader>` d d | Show Run and Debug       |
-| ✅     | `<leader>` d n | Debug: Continue          |
-| ✅     | `<leader>` d p | Debug: Pause             |
-| ✅     | `<leader>` d j | Debug: Step Over         |
-| ✅     | `<leader>` d k | Debug: Step Into         |
-| ✅     | `<leader>` d l | Debug: Step Out          |
-| ✅     | `<leader>` d r | Debug: Restart           |
-| ✅     | `<leader>` d x | Debug: Stop              |
-| ✅     | `<leader>` d h | Debug: Show Hover        |
-| ✅     | `<leader>` d u | Debug: Toggle Breakpoint |
-| ✅     | `<leader>` d i | Debug: Inline Breakpoint |
+| Status | Command        | Description                   |
+| ------ | -------------- | ----------------------------- |
+| ✅     | `<leader>` d s | Debug: Start Debugging        |
+| ✅     | `<leader>` d d | Show Run and Debug            |
+| ✅     | `<leader>` d n | Debug: Continue               |
+| ✅     | `<leader>` d p | Debug: Pause                  |
+| ✅     | `<leader>` d j | Debug: Step Over              |
+| ✅     | `<leader>` d k | Debug: Step Into              |
+| ✅     | `<leader>` d l | Debug: Step Out               |
+| ✅     | `<leader>` d r | Debug: Restart                |
+| ✅     | `<leader>` d x | Debug: Stop                   |
+| ✅     | `<leader>` d h | Debug: Show Hover             |
+| ✅     | `<leader>` d w | Debug: Close Exception Widget |
+| ✅     | `<leader>` d u | Debug: Toggle Breakpoint      |
+| ✅     | `<leader>` d i | Debug: Inline Breakpoint      |
 
 <br />
 
@@ -426,6 +441,11 @@ Create new files from the command palette.
       "name": "Debug: Show Hover",
       "before": ["<leader>", "d", "h"],
       "commands": ["editor.debug.action.showDebugHover"]
+    },
+    {
+      "name": "Debug: Close Exception Widget",
+      "before": ["<leader>", "d", "w"],
+      "commands": ["editor.debug.action.closeExceptionWidget"]
     },
     {
       "name": "Debug: Toggle Breakpoint",

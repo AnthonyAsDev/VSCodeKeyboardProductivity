@@ -260,6 +260,11 @@
       "commands": ["editor.debug.action.showDebugHover"]
     },
     {
+      "name": "Debug: Close Exception Widget",
+      "before": ["<leader>", "d", "w"],
+      "commands": ["editor.debug.action.closeExceptionWidget"]
+    },
+    {
       "name": "Debug: Toggle Breakpoint",
       "before": ["<leader>", "d", "u"],
       "commands": ["editor.debug.action.toggleBreakpoint"]
